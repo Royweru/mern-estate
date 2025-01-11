@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaSearch } from 'react-icons/fa'
 
 export const Navbar = () => {
   return (
@@ -21,11 +22,16 @@ export const Navbar = () => {
              </div>
            </a>
             </div>
-           <input 
+            <form action=""
+            className=' bg-slate-100 p-3 rounded-lg flex items-center'
+            >
+                 <input 
            type="text"
            className=' py-2 px-4 font-mono bg-white border border-zinc-800/85 rounded-md'
            placeholder='Search....'
            />
+            <FaSearch className=' text-slate-600 font-semibold'/>
+            </form>
         </nav> 
     </div>
   )
